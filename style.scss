@@ -1,0 +1,33 @@
+@use "./base/reset";
+@use "./base/variables" as *;
+@use "./base/fonts";
+@use "./base/mixins" as *;
+
+body {
+  background-color: #fffae2;
+}
+.app {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1500px;
+  background-color: #fffae2;
+  min-height: 50px;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  &__header {
+    @include bold(4rem, 5rem, $yellow);
+  }
+  &__list {
+    h2 {
+      @include bold(3rem, 3rem, #e6e18f);
+      padding-bottom: 1rem;
+      padding-top: 2rem;
+    }
+    li {
+      list-style-type: disc;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      color: #92977e;
+    }
+  }
+}

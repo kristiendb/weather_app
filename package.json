@@ -1,0 +1,17 @@
+{
+  "name": "oefening-promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy": "surge ./dist weather-app-kristien.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
