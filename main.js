@@ -15,7 +15,7 @@ async function main() {
 
     let cityListItem = listItemTemplate
       .replaceAll("%STAD%", data.stad)
-      .replaceAll("%AVERAGE%", averageTemp.toFixed(2) + "°C");
+      .replaceAll("%AVERAGE%", averageTemp.toFixed(2) + "u");
 
     cityListItem += "<ul>";
 
@@ -23,7 +23,7 @@ async function main() {
       const month = data.stats[j].maand;
       const temperature = data.stats[j].zon;
 
-      cityListItem += `<li>${month}: ${temperature}°C</li>`;
+      cityListItem += `<li>${month}: ${temperature}u</li>`;
     }
 
     cityListItem += "</ul>";
